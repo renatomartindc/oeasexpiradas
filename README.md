@@ -38,10 +38,11 @@ a) Abrir el archivo constants.ts ubicado en /libreriaupdate/src
 	
   2) En caso el password del usuario admin@gmail, haya sido modificado es necesario actualizarlo como sigue a continuación:  
 
-         ```bash
+         
          export const username = 'admin@gmail.com';
+	 
          export const password = 'Peru123456789@';
-	 ```
+	 
 	
 ## Compilación
 
