@@ -7,10 +7,9 @@ a)	Instalar NodeJs
 	-Para Ubuntu : https://www.digitalocean.com/community/tutorials/como-instalar-node-js-en-ubuntu-18-04-es
 	-Para Windows 7: https://www.ecodeup.com/como-instalar-node-js-y-su-gestor-de-paquetes-npm-en-windows/
 
-b)	Descargar el script de Actualizacion de OEAs caducadas (JavaScript) desde la siguiente ubicación:  
-c)  Crear la carpera libreriaupdate y copiar los archivos descargados en el punto b.
-d)	Ubicar todos los archivos descargados, en un mismo directorio de trabajo creado en el Nodo de la aplicación y el cual deber contar con todos los permisos.
-e)	El script se ejecutará por defecto con el Usuario Administrador por lo que este deberá aparte del ROL Administrador, tener los siguientes roles:
+b)      Crear la carpera libreriaupdate y copiar los archivos descargados en el punto b.
+c)	Ubicar todos los archivos descargados, en un mismo directorio de trabajo creado en el Nodo de la aplicación y el cual deber contar con todos los permisos.
+d)	El script se ejecutará por defecto con el Usuario Administrador por lo que este deberá aparte del ROL Administrador, tener los siguientes roles:
 
 	-Registrador de Certificados
 	-Autorizador de Certificados
