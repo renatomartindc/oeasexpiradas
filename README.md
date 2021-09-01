@@ -8,7 +8,9 @@ a)	Instalar NodeJs
 	-Para Windows 7: https://www.ecodeup.com/como-instalar-node-js-y-su-gestor-de-paquetes-npm-en-windows/
 
 b)      Crear la carpera libreriaupdate y copiar los archivos descargados en el punto b.
+
 c)	Ubicar todos los archivos descargados, en un mismo directorio de trabajo creado en el Nodo de la aplicación y el cual deber contar con todos los permisos.
+
 d)	El script se ejecutará por defecto con el Usuario Administrador por lo que este deberá aparte del ROL Administrador, tener los siguientes roles:
 
 	-Registrador de Certificados
