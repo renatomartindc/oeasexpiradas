@@ -8,7 +8,8 @@ a)	Instalar NodeJs
 	-Para Windows 7: https://www.ecodeup.com/como-instalar-node-js-y-su-gestor-de-paquetes-npm-en-windows/
 
 b)      Clonar el script de Actualizacion de OEAs caducadas (JavaScript) ejecutando el siguiente comando:
- 	git clone https://github.com/renatomartindc/oeasexpiradas.git
+ 	
+	-git clone https://github.com/renatomartindc/oeasexpiradas.git
 
 c)      Crear la carpera libreriaupdate y copiar los archivos descargados en el punto b.
 
@@ -26,16 +27,14 @@ e)	El script se ejecutará por defecto con el Usuario Administrador por lo que e
 a) Abrir el archivo constants.ts ubicado en /libreriaupdate/src 
 
   1) Actualizar la variable “url” con el dominio backend correspondiente de cada Aduana como por ejemplo:
-	https://cadenaco-backend.kaytrust.id
+	
+	-https://cadenaco-backend.kaytrust.id
 	
   2) En caso el password del usuario admin@gmail, haya sido modificado es necesario actualizarlo como sigue a continuación:  
 
-  export const username = 'admin@gmail.com';
-  
-  export const password = 'Peru123456789@';
+         -export const username = 'admin@gmail.com';
+         -export const password = 'Peru123456789@';
 	
-
-
 ## Compilación
 
 Instalar las dependencias:
@@ -68,7 +67,7 @@ You must view last version library in file "package.json"
   - Crear el archivo "script.sh" dentro de la carpeta libreriaupdate con todos los permisos.
   - Abrir el archivo "script.sh" y editar lo siguiente:
   
-  ```
+  ```bash
         #!/bin/bash
 	cd /home/{usuario_linux}/libreriaupdate
 	echo "Inicio de ejecución"
@@ -78,10 +77,12 @@ You must view last version library in file "package.json"
 
    - Regresar a linea de comandos y dentro de la carpeta libreriaupdate ejecutar el comando "crontab -e" y editar lo siguiente :
 
+```bash
      0 22 * * * ~/libreriaupdate/script.sh
+```
 
     Nota: Donde el primer y segundo valor indica la frecuencia y hora de ejecucion, en nuestro caso el script se ejecutara todos los dias a las 22 horas. Queda
-	libre a cada aduana actualizar la frecuencia y hora de ejecucion segun su preferencia, mas información en https://www.pantz.org/software/cron/croninfo.html.
+    libre a cada aduana actualizar la frecuencia y hora de ejecucion segun su preferencia, mas información en https://www.pantz.org/software/cron/croninfo.html.
 
 
 
