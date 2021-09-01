@@ -4,16 +4,16 @@
 
 a)	Instalar NodeJs 
 
-        ```
-	Para Ubuntu : https://www.digitalocean.com/community/tutorials/como-instalar-node-js-en-ubuntu-18-04-es
-	Para Windows 7: https://www.ecodeup.com/como-instalar-node-js-y-su-gestor-de-paquetes-npm-en-windows/
-        ```
+        
+	-Para Ubuntu : https://www.digitalocean.com/community/tutorials/como-instalar-node-js-en-ubuntu-18-04-es
+	-Para Windows 7: https://www.ecodeup.com/como-instalar-node-js-y-su-gestor-de-paquetes-npm-en-windows/
+        
 
 b)      Clonar el script de Actualizacion de OEAs caducadas (JavaScript) ejecutando el siguiente comando:
  	
-	```
+	
 	git clone https://github.com/renatomartindc/oeasexpiradas.git
-        ```
+        
 	
 c)      Crear la carpera libreriaupdate y copiar los archivos descargados en el punto b.
 
@@ -21,10 +21,11 @@ d)	Ubicar todos los archivos descargados, en un mismo directorio de trabajo crea
 
 e)	El script se ejecutará por defecto con el Usuario Administrador por lo que este deberá aparte del ROL Administrador, tener los siguientes roles:
 
-        ```
+        
 	Registrador de Certificados
+	
 	Autorizador de Certificados
-        ```
+        
 
 ## Seteo
 
@@ -32,15 +33,15 @@ e)	El script se ejecutará por defecto con el Usuario Administrador por lo que e
 a) Abrir el archivo constants.ts ubicado en /libreriaupdate/src 
 
   1) Actualizar la variable “url” con el dominio backend correspondiente de cada Aduana como por ejemplo:
-	```
+  
 	https://cadenaco-backend.kaytrust.id
-	```
+	
   2) En caso el password del usuario admin@gmail, haya sido modificado es necesario actualizarlo como sigue a continuación:  
 
-         ```
+         ```bash
          export const username = 'admin@gmail.com';
          export const password = 'Peru123456789@';
-	```
+	 ```
 	
 ## Compilación
 
@@ -75,7 +76,7 @@ You must view last version library in file "package.json"
   - Abrir el archivo "script.sh" y editar lo siguiente:
   
   ```bash
-  #!/bin/bash
+    #!/bin/bash
 	cd /home/{usuario_linux}/libreriaupdate
 	echo "Inicio de ejecución"
 	node dist/index.js
