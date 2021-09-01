@@ -1,0 +1,25 @@
+{
+  "name": "cadena-update-state",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "node node_modules/typescript/bin/tsc",
+    "postinstall": "npm run build"
+  },
+  "author": "Renato De La Rosa",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "csv-writer": "^1.6.0",
+    "inquirer": "^7.3.3",
+    "moment": "^2.29.1",
+    "node-fetch": "^2.6.1",
+    "read-excel-file": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.9",
+    "typescript": "^4.1.2"
+  }
+}
