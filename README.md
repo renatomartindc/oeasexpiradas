@@ -92,6 +92,8 @@ You must view last version library in file "package.json"
 
     Donde el primer y segundo valor indica la frecuencia (0=diaria) y hora de ejecucion, en nuestro caso el script se ejecutara todos los dias a las 22 horas. Queda
     libre a cada aduana actualizar la frecuencia y hora de ejecucion segun su preferencia, mas información en: https://www.pantz.org/software/cron/croninfo.html.
+	
+	Nota: Tomar en cuenta que el valor de la fecha de ejecucion configurada, sera la misma que la del Nodo de aplicación.
 
 
 
