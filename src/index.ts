@@ -1,7 +1,7 @@
 import * as chalk from 'chalk';
 import * as moment from 'moment';
 import { Requests } from './requests';
-import { dateFormat, timeoutUpdateState, timeoutGeneral, logFileName, maxRetry } from './constants';
+import { dateFormat, timeoutUpdateState, timeoutGeneral, logFileName, maxRetry, countryCode } from './constants';
 const fs = require('fs');
 
 namespace Cadena {
@@ -37,7 +37,7 @@ namespace Cadena {
 					 
 				    //console.log(`OEA: ${OEA.id}  ${OEA.valideDate}  ${OEA.statusOEA.code} \n`);
 					
-					if(moment(OEA.valideDate).isBefore(moment())  &&  OEA.statusOEA.code == '10' && !OEA.edit){
+					if(moment(OEA.valideDate).isBefore(moment())  &&  OEA.statusOEA.code == '10' && !OEA.edit && OEA.country.code == countryCode){
 					 
 				       //console.log(`OEA con fecha vencida`);
 					   

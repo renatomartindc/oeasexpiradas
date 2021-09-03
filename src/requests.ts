@@ -52,7 +52,7 @@ export class Requests {
                 method: 'PUT',
                 body: JSON.stringify({
                     codeStatus: '24',
-                    message: 'Vigencia Expirada'
+                    message: 'Vigencia Expirada actualizada por CRON'
                 }),
                 headers: {
                     'Content-Type': 'application/json',

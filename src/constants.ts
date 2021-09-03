@@ -1,5 +1,6 @@
 // Cada aduana debe usar su cadena de conexión y código de país
 export const url = `https://cadenaco-backend.kaytrust.id`;
+export const countryCode = 'CO';
 
 // Credenciales para la solicitud del token
 export const username = 'admin@gmail.com';
