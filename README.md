@@ -35,8 +35,14 @@ a) Abrir el archivo constants.ts ubicado en /libreriaupdate/src
   1) Actualizar la variable “url” con el dominio backend correspondiente de cada Aduana como por ejemplo:
   
 	https://cadenaco-backend.kaytrust.id
+
+  2) Actualizar la variable “countryCode” con el codigo de pais correspondiente de cada Aduana como por ejemplo:
+  
+	CO (País Colombia)
+	PE (País Peru)
+	...
 	
-  2) En caso el password del usuario admin@gmail, haya sido modificado es necesario actualizarlo como sigue a continuación:  
+  3) En caso el password del usuario admin@gmail, haya sido modificado es necesario actualizarlo como sigue a continuación:  
 
          
          export const username = 'admin@gmail.com';
